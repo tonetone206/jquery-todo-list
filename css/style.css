@@ -1,0 +1,13 @@
+h1 {
+text-align: center;
+}
+body {
+background: linear-gradient(to left, #00b09b, #96c93d);
+height: 1000px;
+}
+button {
+width: 200px;
+text-align: center;
+}
+footer {
+}
