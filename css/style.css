@@ -1,13 +1,22 @@
 h1 {
 text-align: center;
 }
+h2 {
+text-align: center;
+font-family: arial;
+font-weight: bold;
+}
 body {
 background: linear-gradient(to left, #00b09b, #96c93d);
-height: 1000px;
+background-size: cover;
+text-align: center;
 }
 button {
 width: 200px;
 text-align: center;
 }
 footer {
+}
+ul {
+list-style: none;
 }
