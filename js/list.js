@@ -4,20 +4,25 @@ var addListItem = function() {
 	var text = $('input').value();
 	console.log(text);
 }
+var listItem;
+
 
 $(document).ready(function() {
-$('.submit').on('click', function() {
-	var inputText = $('input').val();
-	console.log(inputText);
-	var listItem = $('<li>');
-	listItem.text(inputText);
-	$('ul').append(listItem);
-	$('input').val('');
+	$('ul').on('click', 'span', function(e) {
+    	$(e.target).parent().remove();
+	});
+	$('.submit').on('click', function() {
+		var inputText = $('input').val();
+		console.log(inputText);
+		listItem = $('<li>');
+		listItem.text(inputText);
+		$('ul').append('<li>'+inputText+'<span> x </span></li>');
+		$('input').val('');
+	});
+// 	$('.delete').on('click', function() {
+// 		listItem.remove();
 });
-$('.delete').on('click', function() {
-$('li:last-child').remove();
-});
-});
+// 	});
 
 // $('submit').click(function() {
 // 	.append();
